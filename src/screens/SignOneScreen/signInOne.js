@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import constanst from '../../constants';
 import Styles from './style';
+import constants from '../../constants/constants';
 
 const SignScreenOne = ({}) => {
   //Variable For Password Security
@@ -20,14 +21,14 @@ const SignScreenOne = ({}) => {
         <Image source={constanst.image.Logo_01} style={Styles.logoView} />
       </View>
       <View style={Styles.headingView}>
-        <Text style={Styles.textOneStyle}>Let's Sign You In</Text>
+        <Text style={Styles.textOneStyle}>{constants.TestSignOne}</Text>
         <Text style={Styles.textTwoStyle}>
-          Welcome back, you've been missed
+         {constants.TestSignTwo}
         </Text>
       </View>
       <View style={Styles.secondView}>
         <View style={Styles.inputOneView}>
-          <Text style={Styles.textThreeStyle}> Email </Text>
+          <Text style={Styles.textThreeStyle}>{constants.TestThree}</Text>
           <View style={Styles.inputView}>
             <TextInput style={Styles.textInput}></TextInput>
             <TouchableOpacity>
@@ -39,7 +40,7 @@ const SignScreenOne = ({}) => {
           </View>
         </View>
         <View style={Styles.inputTwoView}>
-          <Text style={Styles.textThreeStyle}> Password </Text>
+          <Text style={Styles.textThreeStyle}> {constants.TestSignFour}</Text>
           <View style={Styles.inputView}>
             <TextInput
               style={Styles.textInput}
@@ -54,20 +55,20 @@ const SignScreenOne = ({}) => {
         <View style={Styles.bottomView}>
           <TouchableOpacity>
             <View style={Styles.forgetView}>
-              <Text style={Styles.forgetTextStyle}>Forgot Password?</Text>
+              <Text style={Styles.forgetTextStyle}> {constants.TestSignFive}</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity>
             <View style={Styles.signView}>
-              <Text style={Styles.signText}>Sign in</Text>
+              <Text style={Styles.signText}> {constants.TestSignSix}</Text>
             </View>
           </TouchableOpacity>
           <View style={Styles.textFourMainView}>
             <View style={Styles.textFourView}>
-              <Text style={Styles.textFour}>Don't have an account?</Text>
+              <Text style={Styles.textFour}>{constants.TestSignSeven}</Text>
               <TouchableOpacity>
                 <View style={Styles.signUpView}>
-                  <Text style={Styles.signUp}>Sign Up</Text>
+                  <Text style={Styles.signUp}> {constants.TestSignEight}</Text>
                 </View>
               </TouchableOpacity>
             </View>
@@ -77,7 +78,7 @@ const SignScreenOne = ({}) => {
           <TouchableOpacity>
             <View style={Styles.faceBookView}>
               <Image source={constanst.image.Fb} style={Styles.socialImage} />
-              <Text style={Styles.socialFbText}>Continue With Facebook</Text>
+              <Text style={Styles.socialFbText}> {constants.TestSignNine}</Text>
             </View>
           </TouchableOpacity>
           <View style={{marginTop: 10}}>
@@ -88,7 +89,7 @@ const SignScreenOne = ({}) => {
                   style={Styles.socialImage}
                 />
                 <Text style={Styles.socialGoogleText}>
-                  Continue With Google
+                {constants.TestSignTen}
                 </Text>
               </View>
             </TouchableOpacity>

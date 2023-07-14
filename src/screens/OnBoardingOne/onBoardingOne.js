@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import Styles from './style';
 import constanst from '../../constants';
+import constants from '../../constants/constants';
 
 const OnBoardingOne = ({navigation}) => {
   return (
@@ -15,10 +16,9 @@ const OnBoardingOne = ({navigation}) => {
       </View>
       <View style={Styles.secondOnOneView}>
         <View style={Styles.firstHeadingView}>
-          <Text style={Styles.chooseText}>Choose a Favourite Food</Text>
+          <Text style={Styles.chooseText}>{constants.TestOnOne}</Text>
           <Text style={Styles.text}>
-            When You order Eat Steet, we'll hook you {'\n'} up with exclusive
-            coupon, soecials and {'\n'} rewards
+          {constants.TestOnTwo}
           </Text>
           <View style={Styles.slideBarView}>
             <View style={Styles.squareView}></View>
@@ -29,12 +29,12 @@ const OnBoardingOne = ({navigation}) => {
         <View style={Styles.bottomButtonView}>
           <TouchableOpacity onPress={()=>navigation.navigate('SignOneScreen')}>
             <View style={Styles.skipView}>
-              <Text style={Styles.skipText}>Skip</Text>
+              <Text style={Styles.skipText}>{constants.TestOnThree}</Text>
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => navigation.navigate('OnBoardingTwo')}>
             <View style={Styles.nextView}>
-              <Text style={Styles.nextText}>Next</Text>
+              <Text style={Styles.nextText}>{constants.TestOnFour}</Text>
             </View>
           </TouchableOpacity>
         </View>
