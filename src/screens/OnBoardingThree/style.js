@@ -63,34 +63,24 @@ const Styles= StyleSheet.create({
         height:10,
         width:10,
         backgroundColor:"#FF6C44",
-        borderCurve:"circular",
        borderRadius:10
       },
       bottomButtonView:{
-        marginTop:60,
-        flexDirection:"row",
+        marginTop:30,
       },
-      skipView:{
-        marginLeft:70,
-        marginTop:10
-      },
-      skipText:{
-        fontSize:22,
-        color:"#525C67"
-      },
-      nextView:{
+      letsView:{
         height:50,
-        width:180,
+        width:350,
         backgroundColor:"#FF6C44",
-        alignItems:"center",
         borderRadius:10,
-        marginLeft:70
       },
-      nextText:{
-        fontSize:23,
+      letsText:{
+        fontSize:18,
         color:"#FFFFFF",
-        top:10
-      },
+        top:10,
+        fontWeight:"bold",
+        textAlign:"center"
+      }
 });
 
 export default Styles ;   

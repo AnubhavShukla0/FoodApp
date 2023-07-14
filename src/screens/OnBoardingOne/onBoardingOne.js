@@ -3,7 +3,7 @@ import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native';
 import Styles from './style';
 import constanst from '../../constants';
 
-const OnBoardingOne = () => {
+const OnBoardingOne = ({navigation}) => {
   return (
     <View style={Styles.onBoardingOneMainView}>
       <View style={Styles.firstView}>
@@ -27,12 +27,12 @@ const OnBoardingOne = () => {
           </View>
         </View>
         <View style={Styles.bottomButtonView}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>navigation.navigate('SignOneScreen')}>
             <View style={Styles.skipView}>
               <Text style={Styles.skipText}>Skip</Text>
             </View>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('OnBoardingTwo')}>
             <View style={Styles.nextView}>
               <Text style={Styles.nextText}>Next</Text>
             </View>

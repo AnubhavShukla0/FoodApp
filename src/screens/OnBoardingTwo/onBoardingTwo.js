@@ -4,7 +4,7 @@ import Styles from './style';
 import constants from '../../constants';
 
 
-const OnBoardingTwo = ({}) => {
+const OnBoardingTwo = ({navigation}) => {
   return (
     <View style={Styles.mainView}>
       <View style={Styles.firstView}>
@@ -26,18 +26,18 @@ const OnBoardingTwo = ({}) => {
             order online {'\n'} or cash
           </Text>
           <View style={Styles.slideBarView}>
-            <View style={Styles.circleOneView}></View>
-            <View style={Styles.squareLogo2View}></View>
-            <View style={Styles.circleOneView}></View>
+            <View style={Styles.circleView}></View>
+            <View style={Styles.squareView}></View>
+            <View style={Styles.circleView}></View>
           </View>
         </View>
         <View style={Styles.bottomButtonView}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('SignOneScreen')}>
             <View style={Styles.skipView}>
               <Text style={Styles.skipText}>Skip</Text>
             </View>
-          </TouchableOpacity>
-          <TouchableOpacity>
+          </TouchableOpacity >
+          <TouchableOpacity onPress={() => navigation.navigate('OnBoardingThree')}>
             <View style={Styles.nextView}>
               <Text style={Styles.nextText}>Next</Text>
             </View>

@@ -55,7 +55,8 @@ const Styles= StyleSheet.create({
        textInput:{
         fontSize:18,
         marginTop:1,
-        width:330
+        width:330,
+        marginLeft:15
        },
        iconImage:{
         height:25,
